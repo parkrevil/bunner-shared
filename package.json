@@ -2,8 +2,8 @@
   "name": "bunner-shared",
   "private": true,
   "devDependencies": {
-    "@bunner/firebat": "github:parkrevil/bunner-firebat#270ef0e023dd4ec034ce685ad91ac732aa3ad2a9",
-    "@bunner/oxlint-plugin": "github:parkrevil/bunner-oxlint-plugin#d64c8ed0fc306e0627944ed4dcf61bb015e0481e",
+    "@bunner/firebat": "github:parkrevil/bunner-firebat#3da915812aa7889341d8647d7e85db3dd0b10019",
+    "@bunner/oxlint-plugin": "github:parkrevil/bunner-oxlint-plugin#1af4bda96ab8ae14f89c817fc527dcb1a851b2ea",
     "@types/bun": "latest",
     "oxfmt": "^0.26.0",
     "oxlint": "^1.41.0",
