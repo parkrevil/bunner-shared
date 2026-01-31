@@ -1,0 +1,18 @@
+{
+  "name": "bunner-shared",
+  "private": true,
+  "devDependencies": {
+    "@bunner/firebat": "github:parkrevil/bunner-firebat#main",
+    "@bunner/oxlint-plugin": "github:parkrevil/bunner-oxlint-plugin#main",
+    "@types/bun": "latest",
+    "oxfmt": "^0.26.0",
+    "oxlint": "^1.41.0",
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "lint": "oxlint --config ./.oxlintrc.jsonc --type-aware --fix .",
+    "firebat": "bunx firebat",
+    "test": "bun test",
+    "build": "bun -e \"process.exit(0)\""
+  }
+}
