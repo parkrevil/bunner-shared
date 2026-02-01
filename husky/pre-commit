@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+set -eu
+
+bun ./node_modules/bunner-shared/scripts/lint-staged.ts

@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+set -eu
+
+# Fast by default; set BUNNER_STRICT_PREPUSH=1 to enable heavier checks.
+
+if [ "${BUNNER_STRICT_PREPUSH:-0}" = "1" ]; then
+	bun ./node_modules/bunner-shared/scripts/knip.ts
+	# Default to common-ish folders; override by passing args via your own hook shim if needed.
+	bun ./node_modules/bunner-shared/scripts/depcruise.ts -- src scripts
+fi

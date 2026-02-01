@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+set -eu
+
+msgfile="${1:-}"
+
+if [ -z "$msgfile" ]; then
+	echo "[commit-msg] missing commit message file path" >&2
+	exit 2
+fi
+
+bun ./node_modules/bunner-shared/scripts/commitlint.ts -- --edit "$msgfile"
